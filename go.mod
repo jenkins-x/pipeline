@@ -9,7 +9,8 @@ require (
 	github.com/ghodss/yaml v1.0.0
 	github.com/go-openapi/spec v0.19.6
 	github.com/google/go-cmp v0.5.4
-	github.com/google/go-containerregistry v0.2.1
+	github.com/google/go-containerregistry v0.4.0
+	github.com/google/go-containerregistry/pkg/authn/k8schain v0.0.0-20210115174228-38d292ec4b62
 	github.com/google/uuid v1.1.2
 	github.com/hashicorp/go-multierror v1.1.0
 	github.com/hashicorp/golang-lru v0.5.4
@@ -22,12 +23,12 @@ require (
 	go.uber.org/zap v1.16.0
 	golang.org/x/oauth2 v0.0.0-20201208152858-08078c50e5b5
 	gomodules.xyz/jsonpatch/v2 v2.1.0
-	k8s.io/api v0.18.12
-	k8s.io/apimachinery v0.18.12
-	k8s.io/client-go v11.0.1-0.20190805182717-6502b5e7b1b5+incompatible
-	k8s.io/code-generator v0.18.12
+	k8s.io/api v0.20.2
+	k8s.io/apimachinery v0.20.2
+	k8s.io/client-go v0.20.2
+	k8s.io/code-generator v0.20.2
 	k8s.io/klog v1.0.0
-	k8s.io/kube-openapi v0.0.0-20200410145947-bcb3869e6f29
+	k8s.io/kube-openapi v0.0.0-20210113233702-8566a335510f
 	knative.dev/pkg v0.0.0-20210107022335-51c72e24c179
 )
 
@@ -37,13 +38,15 @@ replace (
 	github.com/Azure/azure-sdk-for-go => github.com/Azure/azure-sdk-for-go v38.2.0+incompatible
 )
 
-// Pin k8s deps to v0.18.8
+// Pin k8s deps to v0.20.2
 replace (
-	k8s.io/api => k8s.io/api v0.18.12
-	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.18.12
-	k8s.io/apimachinery => k8s.io/apimachinery v0.18.12
-	k8s.io/apiserver => k8s.io/apiserver v0.18.12
-	k8s.io/client-go => k8s.io/client-go v0.18.12
-	k8s.io/code-generator => k8s.io/code-generator v0.18.12
-	k8s.io/kube-openapi => k8s.io/kube-openapi v0.0.0-20200410145947-bcb3869e6f29
+	k8s.io/api => k8s.io/api v0.20.2
+	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.20.2
+	k8s.io/apimachinery => k8s.io/apimachinery v0.20.2
+	k8s.io/apiserver => k8s.io/apiserver v0.20.2
+	k8s.io/client-go => k8s.io/client-go v0.20.2
+	k8s.io/code-generator => k8s.io/code-generator v0.20.2
+	k8s.io/kube-openapi => k8s.io/kube-openapi v0.0.0-20210113233702-8566a335510f
+
+	knative.dev/pkg => github.com/jstrachan/pkg v0.0.0-20210118084935-c7bdd6c14bd0
 )
