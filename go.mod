@@ -14,9 +14,8 @@ require (
 	github.com/google/uuid v1.1.2
 	github.com/hashicorp/go-multierror v1.1.0
 	github.com/hashicorp/golang-lru v0.5.4
-	github.com/jenkins-x/go-scm v1.5.117
+	github.com/jenkins-x/go-scm v1.5.223
 	github.com/mitchellh/go-homedir v1.1.0
-	github.com/nbio/st v0.0.0-20140626010706-e9e8d9816f32 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/tektoncd/plumbing v0.0.0-20201021153918-6b7e894737b5
 	go.opencensus.io v0.22.5
